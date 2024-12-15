@@ -1,0 +1,49 @@
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.input-field {
+  width: 100%;
+  padding: var(--padding-medium);
+  font-size: var(--font-size-medium);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  color: var(--text-color);
+  background-color: #fff;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.input-field:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.input-field.error {
+  border-color: var(--error-color);
+  background-color: var(--error-bg);
+}
+
+.input-field:disabled {
+  background-color: var(--disabled-color);
+  color: var(--secondary-color);
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: var(--font-size-small);
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.form-group.error .error-message {
+  display: block;
+}

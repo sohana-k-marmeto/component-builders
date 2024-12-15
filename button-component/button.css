@@ -1,0 +1,80 @@
+/* General Button Styles */
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Sizes */
+.btn-small {
+    font-size: var(--font-size-small);
+    padding: var(--padding-small);
+}
+
+.btn-medium {
+    font-size: var(--font-size-medium);
+    padding: var(--padding-medium);
+}
+
+.btn-large {
+    font-size: var(--font-size-large);
+    padding: var(--padding-large);
+}
+
+/* Colors */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Border Radius */
+.btn-rounded {
+    border-radius: var(--border-radius);
+}
+
+/* Solid vs. Outlined */
+.btn-solid {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-outlined {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Gradient Style */
+.btn-gradient {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-color-gradient));
+    color: white;
+}
+
+.btn-outlined.btn-gradient {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-gradient)) 1;    
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* Disabled button styles */
+.btn[disabled],
+.btn[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Remove focus from disabled buttons */
+.btn[disabled]:focus,
+.btn[aria-disabled="true"]:focus {
+    outline: none;
+}
