@@ -7,7 +7,7 @@ The goal of this project is to create a simple, reusable design system that can 
 
 ## Getting Started
 
-To start using the components, you can open the `index.html` file in your browser. It will link you to each component's page where you can explore individual usage and styling guidelines.
+To start using the components, you can open the `index.html` file in your browser. It will link you to each component's page where you can explore individual usage and styling guidelines. All the base CSS for elements like wrappers,root variables are written in `style.css` and the component specific CSS is written in the respective CSS files.
 
 ## Folder Structure
 
