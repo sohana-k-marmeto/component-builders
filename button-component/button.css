@@ -41,25 +41,13 @@
     border-radius: var(--border-radius);
 }
 
-/* Solid vs. Outlined */
-.btn-solid {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.btn-outlined {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
 /* Gradient Style */
 .btn-gradient {
     background: linear-gradient(45deg, var(--primary-color), var(--primary-color-gradient));
     color: white;
 }
 
-.btn-outlined.btn-gradient {
+.btn-secondary.btn-gradient {
     border: 2px solid transparent;
     border-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-gradient)) 1;    
     background: transparent;
